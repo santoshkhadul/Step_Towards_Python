@@ -1,41 +1,68 @@
-a = 7
-b = 2
+# Take input from the user
+a = float(input("Enter the value for a: "))
+b = float(input("Enter the value for b: "))
 
-# addition
-print ('Sum: ', a + b)  
+# Arithmetic Operations
 
-# subtraction
-print ('Subtraction: ', a - b)   
+# Addition
+sum_result = a + b
+print(f"Sum: {sum_result}")
 
-# multiplication
-print ('Multiplication: ', a * b)  
+# Subtraction
+subtraction_result = a - b
+print(f"Subtraction: {subtraction_result}")
 
-# division
-print ('Division: ', a / b) 
+# Multiplication
+multiplication_result = a * b
+print(f"Multiplication: {multiplication_result}")
 
-# floor division
-print ('Floor Division: ', a // b)
+# Division
+if b != 0:  # Check to avoid division by zero
+    division_result = a / b
+    print(f"Division: {division_result:.2f}")  # Formatting to 2 decimal places
+else:
+    print("Division: Error (Division by zero is not allowed)")
 
-# modulo
-print ('Modulo: ', a % b)  
+# Floor Division
+if b != 0:
+    floor_division_result = a // b
+    print(f"Floor Division: {floor_division_result}")
+else:
+    print("Floor Division: Error (Division by zero is not allowed)")
 
-# a to the power b
-print ('Power: ', a ** b) 
+# Modulo
+if b != 0:
+    modulo_result = a % b
+    print(f"Modulo: {modulo_result}")
+else:
+    print("Modulo: Error (Division by zero is not allowed)")
 
-# equal to operator
-print('a == b =', a == b)
+# Exponentiation (Power)
+power_result = a ** b
+print(f"Power: {power_result}")
 
-# not equal to operator
-print('a != b =', a != b)
+# Comparison Operations
 
-# greater than operator
-print('a > b =', a > b)
+# Equal to operator
+equal_to_result = a == b
+print(f"a == b: {equal_to_result}")
 
-# less than operator
-print('a < b =', a < b)
+# Not equal to operator
+not_equal_to_result = a != b
+print(f"a != b: {not_equal_to_result}")
 
-# greater than or equal to operator
-print('a >= b =', a >= b)
+# Greater than operator
+greater_than_result = a > b
+print(f"a > b: {greater_than_result}")
 
-# less than or equal to operator
-print('a <= b =', a <= b)
+# Less than operator
+less_than_result = a < b
+print(f"a < b: {less_than_result}")
+
+# Greater than or equal to operator
+greater_or_equal_to_result = a >= b
+print(f"a >= b: {greater_or_equal_to_result}")
+
+# Less than or equal to operator
+less_or_equal_to_result = a <= b
+print(f"a <= b: {less_or_equal_to_result}")
